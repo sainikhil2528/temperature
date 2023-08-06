@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b19305c0a5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="temp.css" >
+</head>
+
+<body>
+    <div class="temp-container pt-2 pb-5 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center m-3">
+                    <h1 class="heading-element">Temperature Converter</h1>
+                </div>
+                <div class="m-auto">
+                    <select id="selectTemprature">
+                        <option value="Celcius to Kelvin" selected>Celcius to Kelvin</option>
+                        <option value="Celcius to Fahrenheit">Celcius to Fahrenheit</option>
+                        <option value="Kelvin to Celcius">Kelvin to Celcius</option>
+                        <option value="kelvin to Fahrenheit">kelvin to Fahrenheit</option>
+                        <option value="Fahrenheit to Celcius">Fahrenheit to Celcius</option>
+                        <option value="Fahrenheit to Kelvin">Fahrenheit to Kelvin</option>
+                    </select>
+                </div>
+
+                <div class="col-12 mt-5 text-center">
+                    <input type="number" id="tempNum" placeholder="Enter the Temperature" class="p-2 w-75" />
+                    <p class="p" id="errMsg"></p>
+                </div>
+                <div class="col-12   mt-5 text-center">
+                    <button class="btn btn-info mr-3" id="convertBtn">Convert</button>
+                    <button class="btn btn-info" id="resetBtn">Reset</button>
+                </div>
+                <p class="result d-none" id="textElement">The Temperature in <span id="resultEl"></span></p>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="temp.js"></script>
+</body>
+
+</html>
